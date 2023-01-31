@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, StudentInformationPassingProtocol{
+class ViewController: UIViewController,StudentInformationPassingProtocol{
     @IBOutlet weak var firstNameLabel: UILabel!
     @IBOutlet weak var lastNameLabel: UILabel!
     @IBOutlet weak var rollNumberLabel: UILabel!
@@ -16,13 +16,14 @@ class ViewController: UIViewController, StudentInformationPassingProtocol{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
     }
-    
-    
+
     @IBAction func btnMoveToSVC(_ sender: Any) {
         
         secondViewController = (self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController?)!!
-        secondViewController.studentBackDataPassingdelegate = self
+        //secondViewController.studentBackDataPassingdelegate = self
         navigationController?.pushViewController(secondViewController, animated: true)
     }
     
@@ -32,4 +33,3 @@ class ViewController: UIViewController, StudentInformationPassingProtocol{
         rollNumberLabel.text = String(rollNumber)
     }
 }
-

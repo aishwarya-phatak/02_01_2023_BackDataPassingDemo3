@@ -17,6 +17,9 @@
 		68AC395B2987BA7D0081518F /* StudentInformationPassingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC395A2987BA7D0081518F /* StudentInformationPassingProtocol.swift */; };
 		68AC395D2987C31B0081518F /* StudentInfoPassingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC395C2987C31B0081518F /* StudentInfoPassingProtocol.swift */; };
 		68AC395F2987C44E0081518F /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC395E2987C44E0081518F /* Student.swift */; };
+		68ADC61129891C6C00C498C8 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68ADC61029891C6C00C498C8 /* ThirdViewController.swift */; };
+		68ADC61429891D5300C498C8 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68ADC61229891D5300C498C8 /* StudentTableViewCell.swift */; };
+		68ADC61529891D5300C498C8 /* StudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68ADC61329891D5300C498C8 /* StudentTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		68AC395A2987BA7D0081518F /* StudentInformationPassingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInformationPassingProtocol.swift; sourceTree = "<group>"; };
 		68AC395C2987C31B0081518F /* StudentInfoPassingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInfoPassingProtocol.swift; sourceTree = "<group>"; };
 		68AC395E2987C44E0081518F /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		68ADC61029891C6C00C498C8 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		68ADC61229891D5300C498C8 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		68ADC61329891D5300C498C8 /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 				68AC395A2987BA7D0081518F /* StudentInformationPassingProtocol.swift */,
 				68AC395C2987C31B0081518F /* StudentInfoPassingProtocol.swift */,
 				68AC395E2987C44E0081518F /* Student.swift */,
+				68ADC61029891C6C00C498C8 /* ThirdViewController.swift */,
+				68ADC61229891D5300C498C8 /* StudentTableViewCell.swift */,
+				68ADC61329891D5300C498C8 /* StudentTableViewCell.xib */,
 			);
 			path = 02_01_2023_BackDataPassingDemo3;
 			sourceTree = "<group>";
@@ -140,6 +149,7 @@
 				68AC39512987B97F0081518F /* LaunchScreen.storyboard in Resources */,
 				68AC394E2987B97F0081518F /* Assets.xcassets in Resources */,
 				68AC394C2987B97D0081518F /* Main.storyboard in Resources */,
+				68ADC61529891D5300C498C8 /* StudentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +165,9 @@
 				68AC39492987B97D0081518F /* ViewController.swift in Sources */,
 				68AC39452987B97D0081518F /* AppDelegate.swift in Sources */,
 				68AC39472987B97D0081518F /* SceneDelegate.swift in Sources */,
+				68ADC61429891D5300C498C8 /* StudentTableViewCell.swift in Sources */,
 				68AC395F2987C44E0081518F /* Student.swift in Sources */,
+				68ADC61129891C6C00C498C8 /* ThirdViewController.swift in Sources */,
 				68AC395B2987BA7D0081518F /* StudentInformationPassingProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,7 +16,12 @@ class SecondViewController: UIViewController {
     var firstName : String = ""
     var lastName : String = ""
     var rollNumber : Int = 0
-    var studentBackDataPassingdelegate : StudentInformationPassingProtocol?
+    var studentObject : Student?
+    
+    //approach 2
+    var studentBackDataPassingDelegate : StudentInfoPassingProtocol?
+    
+   // var studentBackDataPassingdelegate : StudentInformationPassingProtocol?
     
     override func viewDidLoad() {
         
@@ -24,10 +29,23 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         
     }
-    
    
     @IBAction func btnNavigateToFirstViewController(_ sender: Any) {
-        guard let delegateSVC = studentBackDataPassingdelegate else { return
+        //Approach 2
+        guard let studentDataPassDelegate = studentBackDataPassingDelegate else { return  }
+        
+        firstName = firstNameTextField.text!
+        lastName = lastNameTextField.text!
+        rollNumber = (rollNumberTextField.text?.codingKey.intValue)!
+        
+        studentObject = Student(firstName: firstName, lastName: lastName, rollNumber: rollNumber)
+        
+        studentDataPassDelegate.backDataPassing(student: studentObject!)
+        
+        navigationController?.popViewController(animated: true)
+        
+        //Approach 1
+        /*guard let delegateSVC = studentBackDataPassingdelegate else { return
         }
         
         firstName = firstNameTextField.text!
@@ -37,6 +55,6 @@ class SecondViewController: UIViewController {
         delegateSVC.passDataToSVC(firstName: firstName, lastName: lastName, rollNumber: rollNumber)
         
         navigationController?.popViewController(animated: true)
-        
+        */
     }
 }
